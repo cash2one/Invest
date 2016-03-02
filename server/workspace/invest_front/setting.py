@@ -9,6 +9,16 @@ from invest_setting import *
 SERVICE_TYPE = ST_INVEST_FRONT
 VERSION = "0.0.1"
 
+# 功能列表
+LOAN_NAV_LS = [
+    {"des": "首页",    "url": "/", },
+    {"des": "贷款攻略", "url": "/loan_knowledge", },
+    {"des": "贷款案例", "url": "/loan_case", },
+    {"des": "常见问题", "url": "/loan_problem", },
+    {"des": "关于宏圆", "url": "/about", },
+    {"des": "经理登录", "url": "/login", },
+]
+
 # 贷款产品链接
 LOAN_PRODUCT_DIC = {
     LP_HOUSE_MORTGAGE:   {"id": LP_HOUSE_MORTGAGE,   "idx": 0,  "title": "房产抵押贷款",    "color": "#FF3300", "sub_title": "让房产变成提款机",   "des": "最高可贷5000万 | 最长可贷10年 | 可用于经营或消费", "img": "static/images/index/lp/lp_hm.png"},
@@ -52,12 +62,12 @@ for dic in LOAN_PRODUCT_DIC.values():
     dic["url"] = "/loan_business?lb_type=%s" % dic['idx']
 
 # 贷款常识链接
-LOAN_KNOWLEDAGE_LS=[
-    {"text": "• 赚钱之道：用银行的钱生钱之7招锦囊"},
-    {"text": "• 提高审批通过率 可在贷款申请表上觅良机"},
-    {"text": "• 企业申请银行贷款 将面临3种背景调查"},
-    {"text": "• 追寻大额无抵押贷款你应把握3大技巧"},
-    {"text": "• 无抵押贷款：3类人易斩过银行审批关"},
+LOAN_KNOWLEDAGE_LS = [
+    {"text": "• 赚钱之道：用银行的钱生钱之7招锦囊", "date":"2016-03-02"},
+    {"text": "• 提高审批通过率 可在贷款申请表上觅良机", "date":"2016-03-02"},
+    {"text": "• 企业申请银行贷款 将面临3种背景调查", "date":"2016-03-02"},
+    {"text": "• 追寻大额无抵押贷款你应把握3大技巧", "date":"2016-03-02"},
+    {"text": "• 无抵押贷款：3类人易斩过银行审批关", "date":"2016-03-02"},
 ]
 
 for idx, dic in enumerate(LOAN_KNOWLEDAGE_LS):

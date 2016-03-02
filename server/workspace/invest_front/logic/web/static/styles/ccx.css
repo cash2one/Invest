@@ -1,0 +1,186 @@
+
+.CCX_main A {
+}
+.CCX_main A {
+    outline-style: none;
+    outline-width: medium;
+}
+.CCX_main {
+    color: #666;
+    font-size: 14px;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-top: 14px;
+    width: 980px;
+}
+.CCX_main A {
+    color: #666;
+}
+.CCX_main UL {
+    margin: 0;
+    padding: 0;
+}
+.CCX_main LI {
+    margin: 0;
+    padding: 0;
+}
+.CCX_main DIV {
+    margin: 0;
+    padding: 0;
+}
+.CCX_main .bread {
+    border-bottom: 2px solid #d2d2d2;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    margin: 4px 0 5px;
+}
+.CCX_main .bread IMG {
+    vertical-align: middle;
+}
+.clear {
+    clear: both;
+}
+.CCX_main .color999 {
+    color: #999;
+}
+.CCX_main .font12 {
+    font-size: 12px;
+    line-height: 24px;
+}
+.CCX_main .font14 {
+    font-size: 14px;
+    line-height: 28px;
+}
+.CCX_main .font16 {
+    font-size: 16px;
+    line-height: 32px;
+}
+.CCX_main .center {
+    text-align: center;
+}
+.CCX_main A {
+    cursor: pointer;
+}
+.CCX_main A:hover {
+    color: #ff6329;
+    text-decoration: none;
+}
+.CCX_main .content {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 704px;
+}
+.CCX_main .content li {
+    font: 400 15px/30px "microsoft yahei";
+    height: 34px;
+}
+.CCX_main .content span.ty_date {
+    color: #999;
+    float: right;
+    font-family: Arial;
+    font-size: 14px;
+}
+.CCX_main .content span.ty_icon {
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    padding-top: 9px;
+}
+.CCX_main .content .article {
+    border-color: #efefef -moz-use-text-color;
+    border-style: solid none;
+    border-width: 2px medium;
+    margin: 15px 0;
+    padding: 20px 0;
+}
+.CCX_main .side {
+    float: right;
+}
+.CCX_main .content .article P {
+    text-indent: 28px;
+}
+.CCX_main .content .article .blue {
+    color: #5b87a4;
+    margin: 8px 0;
+    text-indent: 0;
+}
+.CCX_main .content .article .bolder {
+    font-weight: bolder;
+    margin-top: 8px;
+    text-indent: 0;
+}
+.CCX_main .content .article DIV {
+    line-height: 160%;
+}
+.CCX_main .content .article P {
+    line-height: 160%;
+}
+.CCX_main .content .title {
+    background: inherit;
+    border-bottom: inherit;
+    color: #ff6329;
+    font-family: "Î¢ÈíÑÅºÚ";
+    font-size: 24px;
+    height: inherit !important;
+    line-height: 48px;
+}
+.CCX_main .content .title_index {
+}
+.CCX_main DL {
+    color: #5b87a4;
+    line-height: 24px;
+}
+.CCX_main DL DT {
+    color: #5b87a4;
+    font-weight: bolder;
+    margin: 5px 0;
+}
+.CCX_main DL DD {
+    /*background: url("../imgs/narrow.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);*/
+    background: no-repeat scroll left center rgba(0, 0, 0, 0);
+    height: 24px;
+    line-height: 24px;
+    margin: 5px 0;
+    padding-left: 15px;
+    position: relative;
+}
+.CCX_main DL DD A {
+    color: #5b87a4;
+}
+.CCX_main DL DD A:hover {
+    color: #ff6329;
+    text-decoration: underline;
+}
+.CCX_main DL DD SPAN {
+    color: #5b87a4;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.CCX_main .side .daikuan {
+    margin-top: 15px;
+}
+.ty_info A:hover {
+    color: #ff5c00;
+}
+.ty_info {
+    padding-top: 15px;
+}
+.ty_info LI {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 245px;
+}
+.ty_info A {
+    color: #666;
+}

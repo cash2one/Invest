@@ -1,0 +1,32 @@
+<div class="side">
+    <div style="width:230px;padding-top:15px">
+        <h3 style="margin-bottom:15px" class="ft_yh ty_tit">贷款常识</h3>
+        <ul class="ty_info">
+            {% for loan_knowledge_dic in LoanKnowledgeLs %}
+                <li><a target="_blank" href="{{loan_knowledge_dic.url}}">{{loan_knowledge_dic.text}}</a></li>
+            {% endfor %}
+        </ul><br>
+        <p class="ty_more01"><a target="_blank" href="/loan_knowledge">更多&gt;</a></p>
+    </div>
+    <br>
+    <div style="width:230px;padding-top:15px">
+        <h3 style="margin-bottom:15px" class="ft_yh ty_tit">贷款案例</h3>
+        <ul class="ty_info">
+            {% for loan_case_dic in LoanCaseLs %}
+                <li><a target="_blank" href="{{loan_case_dic.url}}">{{loan_case_dic.text}}</a></li>
+            {% endfor %}
+        </ul><br>
+        <p class="ty_more01"><a target="_blank" href="/loan_case">更多&gt;</a></p>
+    </div>
+    <br>
+    <div style="width:230px;padding-top:15px">
+        <h3 style="margin-bottom:15px" class="ft_yh ty_tit">常见问题</h3>
+        <ul class="ty_info">
+            {% for loan_problem_dic in LoanProblemLs %}
+                <li><a target="_blank" href="{{loan_problem_dic.url}}">{{loan_problem_dic.text}}</a></li>
+            {% endfor %}
+        </ul><br>
+        <p class="ty_more01"><a target="_blank" href="/loan_problem">更多&gt;</a></p>
+    </div>
+
+</div>

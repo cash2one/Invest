@@ -1,0 +1,37 @@
+{% extends 'util/base.html' %}
+{% block head_extend%}
+<link href="static/styles/ccx.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+{% block context %}
+
+<div class="CCX_main">
+    <table width="980" cellspacing="0" border="0" align="center">
+        <tbody><tr>
+            <td valign="top">
+                <table width="710" cellspacing="0" border="0">
+                <tbody><tr>
+                    <td><div class="bread"><img src="/statics/images/util/home.jpg"> 您当前的位置：<a href="/">首页</a>&nbsp;&gt;&nbsp;<a href="#">贷款攻略</a> >  列表</div></td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="content">
+                            {% for data_dic in DataLs %}
+                                <ul><li> <a target="_blank" href="{{data_dic.url}}">{{data_dic.text}}</a><span class="ty_date">{{data_dic.date}}</span></li></ul>
+                            {% endfor %}
+                        </div>
+                    </td>
+                </tr>
+                <tr><td height="40" style="border-top:solid 2px #d2d2d2;"><div class="list_page "></div></td></tr>
+                </tbody>
+                </table>
+            </td>
+            <td valign="top">
+                {% include "util/right.html" %}
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}

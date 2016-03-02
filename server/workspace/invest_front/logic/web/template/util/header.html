@@ -18,12 +18,13 @@
   <tbody><tr>
     <td><div class="nav_global">
         <ul class="nav-site">
-			<li class="curr"><a href="/">首页</a></li>
-            <li ><a href="/loan_knowledge"><span>贷款攻略</span></a></li>
-            <li ><a href="/loan_case"><span>贷款案例</span></a></li>
-            <li ><a href="/loan_problem"><span>常见问题</span></a></li>
-            <li ><a href="/about"><span>关于宏圆</span></a></li>
-            <li ><a href="/login"><span>经理登录</span></a></li>
+            {% for nav_dic in LoanNavls %}
+                {% if CurUrl == nav_dic.url %}
+                    <li class="curr"><a href="{{nav_dic.url}}"><span>{{nav_dic.des}}</span></a></li>
+                {% else %}
+                    <li ><a href="{{nav_dic.url}}"><span>{{nav_dic.des}}</span></a></li>
+                {% endif %}
+            {% endfor %}
         </ul>
     </div></td>
   </tr></tbody>
