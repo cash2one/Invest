@@ -1,0 +1,22 @@
+{% if loan_product_dic.idx % 3 == 0 %}
+<div class="list_one list_first">
+{% else %}
+<div class="list_one list_left">
+{% endif %}
+    <div class="top_line" style="background:{{loan_product_dic.color}}"></div>
+    <div class="top_con">
+        <div class="title_list_div">
+            <span class="size_big" style="color:{{loan_product_dic.color}}">{{loan_product_dic.title}}</span>
+            <span class="size_small" style="color:{{loan_product_dic.color}}"></span>
+        </div>
+        <div class="title_sub"  style="color:#FF3300">{{loan_product_dic.sub_title}}</div>
+        <a href="{{loan_product_dic.url}}"  target="_blank">
+            <div class="image" style="margin:5px 20px;">
+                <img src="{{loan_product_dic.img}}" /></div>
+        </a>
+        <div class="btn">
+            <a href="{{loan_product_dic.url}}" target="_blank" class="btn_a"  style="background:#FF3300">立即申请&gt;</a>
+        </div>
+    </div>
+    <div class="bottom" style="background:{{loan_product_dic.color}}"><span class="bottom_font xyd">{{loan_product_dic.des}}</span></div>
+</div>

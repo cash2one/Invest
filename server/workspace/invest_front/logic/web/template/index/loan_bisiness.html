@@ -1,0 +1,20 @@
+{% if loan_bisiness_dic.idx % 3 == 2 %}
+<div class="bor" style="width:310px;float:left;margin-right:20px;margin-top:10px;">
+{% else %}
+<div class="bor" style="width:310px;float:left;margin-top:10px;">
+{% endif %}
+    <table width="310" height="150" cellspacing="0" border="0">
+        <tbody>
+        <tr>
+            <td height="40" class="title" colspan="2"><a title="{{loan_bisiness_dic.title}}" href="{{loan_bisiness_dic.url}}">{{loan_bisiness_dic.title}}</a></td>
+        </tr>
+        <tr>
+            <td class="pic" rowspan="2"><a target="_blank" href="{{loan_bisiness_dic.url}}"><img width="116" height="100" alt="{{loan_bisiness_dic.lb_type}}" src="{{loan_bisiness_dic.img}}"></a></td>
+            <td valign="top" class="jj">{{loan_bisiness_dic.des}}</td>
+        </tr>
+        <tr>
+            <td valign="top"><a href="{{loan_bisiness_dic.url}}"><img width="98" height="23" border="0" src="static/images/index/lb/lb_ljxq.jpg"></a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

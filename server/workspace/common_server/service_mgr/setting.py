@@ -4,18 +4,7 @@ Created on 2015-4-22
 
 @author: Jay
 """
-# 逻辑服务类型
-LOGIC_SERVICE_TYPE = [
-    ST_SERVICE_MGR,
-    ST_INVEST_FRONT,
-    ST_INVEST_DA,
-    ST_INVEST_GM,
-] = [
-    "service_mgr",
-    "invest_front",
-    "invest_da",
-    "invest_gm",
-]
+from invest_setting import ST_SERVICE_MGR
 
 SERVICE_TYPE = ST_SERVICE_MGR
 VERSION = "0.0.1"

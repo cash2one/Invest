@@ -9,7 +9,7 @@
 }
 
 #kinMaxShow .button.normal{
-  background-image: url(../images/hy/button.png);
+  background-image: url(../images/index/button.png);
   background-size: 100% 100%;
   marginRight:8px;
   border:0;
@@ -18,7 +18,7 @@
 }
 
 #kinMaxShow .button.focus{
-  background-image: url(../images/hy/button.png);
+  background-image: url(../images/index/button.png);
   background-size: 100% 100%;
   border:0;
 }

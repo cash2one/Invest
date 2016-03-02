@@ -1,0 +1,87 @@
+{% extends 'util/base.html' %}
+
+{% block context %}
+
+<div id="kinMaxShow">
+    {% for loan_ani_dic in LoanAniLs %}
+    <div>
+        <a href="{{loan_ani_dic.url}}"  title="{{loan_ani_dic.title}}"><img src="{{loan_ani_dic.img}}"  /></a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="contioner">
+    <div id="list_div">
+        {% for loan_product_dic in LoanProductLs %}
+            {% include "index/loan_product.html" %}
+        {% endfor %}
+    </div>
+</div>
+
+<div class="contioner">
+<div class="ui-box-white-bg mt20">
+<div class="ui-box-title"><h3>贷款优势</h3></div>
+<div class="p20 borrow-advantage-list text-center fn-clear">
+    <table width="960" cellspacing="0" border="0" align="center">
+        <tbody>
+        <tr>
+            {% for loan_adv_dic in LoanAdvLs %}
+                {% include "index/loan_adv.html" %}
+            {% endfor %}
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+
+<div id="other_div">
+    <div class="title_other_div">贷款业务</div>
+        {% for loan_bisiness_dic in LoanBusinessLs %}
+            {% include "index/loan_bisiness.html" %}
+        {% endfor %}
+    </div>
+</div>
+
+<div style="clear:both;"></div>
+<div class="contioner_bottom">
+	 <div id="bottom_tem"> 
+	 	<div class="bottom_one right_border"> 
+	 		<div class="title_bottom title_image_1">贷款常识</div> 
+	 		<div class="list">
+            	<ul>
+                    {% for loan_knowledge_dic in LoanKnowledgeLs %}
+                        <li><a target="_blank" href="{{loan_knowledge_dic.url}}">{{loan_knowledge_dic.text}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div> 
+  			<div class="more"><a href="/loan_knowledge" target="_blank">更多&gt;&gt;</a></div>
+      	</div>
+        
+        <div class="bottom_one right_border"> 
+	 		<div class="title_bottom title_image_2">贷款案例</div>
+	 		<div class="list">
+            	<ul>
+                    {% for loan_case_dic in LoanCaseLs %}
+                        <li><a target="_blank" href="{{loan_case_dic.url}}">{{loan_case_dic.text}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div> 
+  			<div class="more"><a href="/loan_case" target="_blank">更多&gt;&gt;</a></div>
+      	</div>
+        
+        <div class="bottom_one none_border"> 
+	 		<div class="title_bottom title_image_3">常见问题</div>
+	 		<div class="list">
+            	<ul>
+                    {% for loan_problem_dic in LoanProblemLs %}
+                        <li><a target="_blank" href="{{loan_problem_dic.url}}">{{loan_problem_dic.text}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div> 
+  			<div class="more"><a href="/loan_problem" target="_blank">更多&gt;&gt;</a></div>
+      	</div>
+    </div>
+</div>
+
+{% endblock %}

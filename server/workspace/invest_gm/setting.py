@@ -4,7 +4,7 @@ Created on 2015-4-22
 
 @author: Jay
 """
-from service_mgr import setting
+from invest_setting import ST_INVEST_GM
 
-SERVICE_TYPE = setting.ST_INVEST_GM
+SERVICE_TYPE = ST_INVEST_GM
 VERSION = "0.0.1"
