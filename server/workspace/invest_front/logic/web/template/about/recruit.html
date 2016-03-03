@@ -1,0 +1,34 @@
+{% extends 'about/about_model.html' %}
+
+{% block about_content%}
+
+<td valign="top">
+    <div class="about_col-auto">
+        <img src="/static/images/about/about_ad.png" width="720" height="171" />
+        <h1 class="title">招聘信息</h1>
+        <ul>
+            <li class="content"><span >如果你是普通青年，在宏圆，会让人看到你不普通的另一面；</span></li>
+            <li class="content"><span >如果你是文艺青年，在</span><span >宏圆</span><span >，会让人感受到你锐意创新的天赋。</span></li>
+            <li class="content"><span >如果你是靠谱青年，就和我们一起把爱传向更远方。</span></li>
+            <li class="content"><span >多年以后，你会为今天的选择而骄傲。</span></li>
+            <li class="job_title_li"></li>
+            <li class="content"><span >宏圆投资目前有以下的职位空缺,请将你的简历发送到zhaopin@hytz.com,期待你的加入!!!</span></li>
+
+            {% for recruit_dic in recruit_ls %}
+                <li class="job_title_li"><span>{{recruit_dic.job_name}}</span></li>
+                <li class="job_sub_title_li"><span><strong>岗位职责:</strong></span></li>
+                {% for duty_dic in recruit_dic['duty_detail_ls'] %}
+                    <li class="job_req_content_li"><span>{{duty_dic}}</span></li>
+                {% endfor %}
+                <li class="job_sub_title_li"><span><strong>职位要求:</strong></span></li>
+                {% for req_dic in recruit_dic['req_detail_ls'] %}
+                    <li class="job_req_content_li"><span>{{req_dic}}</span></li>
+                {% endfor %}
+                <li class="job_sub_title_li"><span><strong>工作地点:</strong></span></li>
+                <li class="job_req_content_li"><span>{{recruit_dic.address_detail}}</span></li>
+            {% endfor %}
+        </ul>
+    </div>
+</td>
+
+{% endblock %}

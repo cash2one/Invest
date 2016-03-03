@@ -72,12 +72,3 @@ class LoanProblemHandle(HttpRpcHandler):
         self.render(LOAN_NAV_BAR_DIC[LBL_PROBLEM]['html'], **render_dict)
 
 
-@route(LOAN_NAV_BAR_DIC[LBL_ABOUT]['url'])  # 关于
-class AboutHandle(HttpRpcHandler):
-    @web_adaptor(use_http_render=False)
-    def get(self):
-        render_dict = {}
-        render_dict.update(get_common_dic(self))
-        self.render(LOAN_NAV_BAR_DIC[LBL_ABOUT]['html'], **render_dict)
-
-

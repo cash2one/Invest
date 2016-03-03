@@ -13,3 +13,10 @@
 .about_col-auto .content span{ color: rgb(65, 65, 65); font-family: 'Microsoft YaHei', STHeiti, sans-serif; font-size: 16px; line-height: 28px;}
 .about_col-auto .content span a{cursor:auto;color:rgb(85, 26, 139);text-decoration:none;}
 .about_col-auto .content span a:hover{color:rgb(85, 26, 139);text-decoration:underline;}
+
+.forward_join_li span{color: rgb(65, 65, 65); font-family: arial, sans-serif; line-height: 20px;}
+.job_title_li{margin: 0px; padding-top: 30px; color: rgb(1, 139, 226); font-size: 14px; font-weight: bold; font-family: arial, sans-serif; line-height: 20px;}
+.job_title_li span,.job_req_content_li span,.job_sub_title_li span{font-size:16px;}
+.job_sub_title_li{margin: 0px; padding-top: 5px; color: rgb(65, 65, 65); font-family: arial, sans-serif; line-height: 20px;}
+.job_req_content_li{margin: 0px; color: rgb(65, 65, 65); font-family: arial, sans-serif; line-height: 20px;}
+
