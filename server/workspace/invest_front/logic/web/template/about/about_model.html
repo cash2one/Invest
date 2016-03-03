@@ -1,0 +1,32 @@
+{% extends 'util/base.html' %}
+{% block head_extend%}
+<link href="/static/styles/about.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+{% block context %}
+
+<table width="980" cellspacing="0" border="0" align="center">
+    <tbody>
+        <tr>
+            <td valign="top">
+                <div id="content">
+                    <div class="col-left left-nav">
+                        <h1>关于我们</h1>
+                        <ul class="content">
+                            {% for about_nav_dic in AboutNavBarLs %}
+                                {% if CurNavBarUrl == about_nav_dic.url %}
+                                    <li class="about_cur"><a href="{{about_nav_dic.url}}"><span>{{about_nav_dic.des}}</span></a></li>
+                                {% else %}
+                                    <li ><a href="{{about_nav_dic.url}}"><span>{{about_nav_dic.des}}</span></a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <div class="bottom"></div>
+                    </div>
+                </div>
+            </td>
+            {% block about_content%}
+            {% endblock %}
+        </tr>
+    </tbody>
+</table>
+{% endblock %}

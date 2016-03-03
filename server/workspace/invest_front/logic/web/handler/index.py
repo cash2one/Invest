@@ -7,13 +7,12 @@ Created on 2015-4-22
 from utils.route import route
 from utils.network.http import HttpRpcHandler
 from utils.wapper.web import web_adaptor
+from invest_front.logic.web.handler import get_common_dic
 from invest_front.setting import *
 
-def get_common_dic(http_handler):
-    return {'LoanNavls': LOAN_NAV_LS,
-            'CurUrl': http_handler.request.uri}
 
-@route(r'/', name='index')  # 首页
+
+@route(LOAN_NAV_BAR_DIC[LBL_ROOT]['url'])  # 首页
 class RootHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
@@ -32,10 +31,10 @@ class RootHandle(HttpRpcHandler):
                        'LoanAniLs':LOAN_ANI_LS}
 
         render_dict.update(get_common_dic(self))
-        self.render('index/index.html', **render_dict)
+        self.render(LOAN_NAV_BAR_DIC[LBL_ROOT]['html'], **render_dict)
 
 
-@route(r'/loan_knowledge', name='loan_knowledge')  # 贷款攻略
+@route(LOAN_NAV_BAR_DIC[LBL_KNOWLEDGE]['url'])  # 贷款攻略
 class LoanKnowledgeHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
@@ -45,10 +44,10 @@ class LoanKnowledgeHandle(HttpRpcHandler):
                        'LoanProblemLs': LOAN_PROBLEM_LS,}
 
         render_dict.update(get_common_dic(self))
-        self.render('util/list.html', **render_dict)
+        self.render(LOAN_NAV_BAR_DIC[LBL_KNOWLEDGE]['html'], **render_dict)
 
 
-@route(r'/loan_case', name='loan_case')  # 贷款案例
+@route(LOAN_NAV_BAR_DIC[LBL_CASE]['url'])  # 贷款案例
 class LoanCaseHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
@@ -58,10 +57,9 @@ class LoanCaseHandle(HttpRpcHandler):
                        'LoanProblemLs': LOAN_PROBLEM_LS,}
 
         render_dict.update(get_common_dic(self))
-        self.render('util/list.html', **render_dict)
+        self.render(LOAN_NAV_BAR_DIC[LBL_CASE]['html'], **render_dict)
 
-
-@route(r'/loan_problem', name='loan_problem')  # 贷款问题
+@route(LOAN_NAV_BAR_DIC[LBL_PROBLEM]['url'])  # 贷款问题
 class LoanProblemHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
@@ -71,6 +69,15 @@ class LoanProblemHandle(HttpRpcHandler):
                        'LoanProblemLs': LOAN_PROBLEM_LS,}
 
         render_dict.update(get_common_dic(self))
-        self.render('util/list.html', **render_dict)
+        self.render(LOAN_NAV_BAR_DIC[LBL_PROBLEM]['html'], **render_dict)
+
+
+@route(LOAN_NAV_BAR_DIC[LBL_ABOUT]['url'])  # 关于
+class AboutHandle(HttpRpcHandler):
+    @web_adaptor(use_http_render=False)
+    def get(self):
+        render_dict = {}
+        render_dict.update(get_common_dic(self))
+        self.render(LOAN_NAV_BAR_DIC[LBL_ABOUT]['html'], **render_dict)
 
 

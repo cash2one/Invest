@@ -9,7 +9,7 @@
   </tr>
 </table><table width="980" cellspacing="0" border="0" align="center">
   <tbody><tr>
-    <td height="90" align="left"><a href="/"><img width="420" height="80" border="0" src="static/images/header/logo1.jpg"></a></td>
+    <td height="90" align="left"><a href="/"><img width="420" height="80" border="0" src="/static/images/util/logo1.jpg"></a></td>
     <td align="right"><span style="font-size:16px;color:#777;">服务热线：</span><span style="font-size:24px;color:#ff8712;font-weight:bold;">15280087277</span></td>
   </tr>
 </tbody>
@@ -18,11 +18,11 @@
   <tbody><tr>
     <td><div class="nav_global">
         <ul class="nav-site">
-            {% for nav_dic in LoanNavls %}
-                {% if CurUrl == nav_dic.url %}
-                    <li class="curr"><a href="{{nav_dic.url}}"><span>{{nav_dic.des}}</span></a></li>
+            {% for index_nav_dic in IndexNavBarLs %}
+                {% if CurIndexNavBarUrl == index_nav_dic.url %}
+                    <li class="curr"><a href="{{index_nav_dic.url}}"><span>{{index_nav_dic.des}}</span></a></li>
                 {% else %}
-                    <li ><a href="{{nav_dic.url}}"><span>{{nav_dic.des}}</span></a></li>
+                    <li ><a href="{{index_nav_dic.url}}"><span>{{index_nav_dic.des}}</span></a></li>
                 {% endif %}
             {% endfor %}
         </ul>

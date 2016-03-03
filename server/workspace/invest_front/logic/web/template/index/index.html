@@ -55,7 +55,7 @@
                     {% endfor %}
                 </ul>
             </div> 
-  			<div class="more"><a href="/loan_knowledge" target="_blank">更多&gt;&gt;</a></div>
+  			<div class="more"><a href="{{LoanKnowledgeLs[0].more_url}}" target="_blank">更多&gt;&gt;</a></div>
       	</div>
         
         <div class="bottom_one right_border"> 
@@ -67,7 +67,7 @@
                     {% endfor %}
                 </ul>
             </div> 
-  			<div class="more"><a href="/loan_case" target="_blank">更多&gt;&gt;</a></div>
+  			<div class="more"><a href="{{LoanCaseLs[0].more_url}}" target="_blank">更多&gt;&gt;</a></div>
       	</div>
         
         <div class="bottom_one none_border"> 
@@ -79,8 +79,30 @@
                     {% endfor %}
                 </ul>
             </div> 
-  			<div class="more"><a href="/loan_problem" target="_blank">更多&gt;&gt;</a></div>
+  			<div class="more"><a href="{{LoanProblemLs[0].more_url}}" target="_blank">更多&gt;&gt;</a></div>
       	</div>
+    </div>
+</div>
+
+<div id="service_div">
+    <div class="title_service_div">合作机构</div>
+    <div class="bor" style="height:90px;">
+        <ul style="width:960px;hegith:auto;">
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://bank.pingan.com/" title="平安银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/erji/hao123/webroot/resource/erji/public/images/pinganyinhang_xin.jpg" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.cmbc.com.cn/" title="中国民生银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95568.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.cebbank.com/" title="中国光大银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95595.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.cgbchina.com.cn/" title="广发银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95508.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.cib.com.cn/" title="兴业银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95561.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://bank.ecitic.com/" title="中兴银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95558.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;float:left;display:block;"><a href="http://www.psbc.com/" title="中国邮政储蓄银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95580.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.spdb.com.cn/" title="浦发银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95528.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.cmbchina.com/" title="招商银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95555.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.abchina.com/cn/" title="中国农业银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95599.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.bankcomm.com/" title="交通银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95559.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.boc.cn/" title="中国银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95566.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;margin-right:15px;float:left;display:block;"><a href="http://www.ccb.com/" title="中国建设银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95533.png" width="120" height="40" /></a></li>
+            <li style="width:120px;height:40px;margin-bottom:10px;float:left;display:block;"><a href="http://www.hxb.com.cn/" title="华夏银行" target="_blank" style="width:120px;height:40px;"><img src="http://www.hao123.com/resource/erji/public/images/erji/95577.png" width="120" height="40" /></a></li>
+        </ul>
     </div>
 </div>
 

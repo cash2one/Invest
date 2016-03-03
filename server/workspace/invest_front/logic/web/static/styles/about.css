@@ -1,0 +1,15 @@
+#content{margin:auto; padding:14px 0 0 0}
+.left-nav{width:210px; height:500px; padding-top:10px}
+.left-nav h1,.left-nav .content li,.left-nav .content li.about_cur a,.left-nav .bottom{background: url(../images/about/about_left.png) no-repeat right top}
+.left-nav h1{display:block; height:40px; text-indent:-999px; overflow:hidden}
+.left-nav .content{background: url(../images/about/about_left_bg.png) repeat-y right top; padding-left:44px}
+.left-nav .content li{background-position: right -102px; display:block; height:30px; line-height:30px; font-size:14px}
+.left-nav .content li a{display:block; height:25px; line-height:25px; padding-left:14px; color:#6f6f6f}
+.left-nav .content li.about_cur a{background-position: left -72px;  font-weight:700; color:#0d4b9b}
+.left-nav .bottom{background-position: right -168px; height:216px}
+.about_col-auto{padding:14px 25px}
+.about_col-auto .title{font-size:25px;padding:5px 0 0;background: url(../images/about/uline.gif) repeat-x left bottom; margin-bottom:15px}
+.about_col-auto .content p{ margin-bottom:15px; font-size:14px; line-height:25px; color:#6f6f6f}
+.about_col-auto .content span{ color: rgb(65, 65, 65); font-family: 'Microsoft YaHei', STHeiti, sans-serif; font-size: 16px; line-height: 28px;}
+.about_col-auto .content span a{cursor:auto;color:rgb(85, 26, 139);text-decoration:none;}
+.about_col-auto .content span a:hover{color:rgb(85, 26, 139);text-decoration:underline;}
