@@ -4,7 +4,7 @@ Created on 2015-4-22
 
 @author: Jay
 """
-from invest_front.setting import *
+from invest_front.common.nav_bar import INDEX_NAV_BAR_DIC, ABOUT_NAV_BAR_DIC
 
 def get_common_dic(http_handler):
     IndexNavBarLs = INDEX_NAV_BAR_DIC.values()

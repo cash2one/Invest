@@ -9,7 +9,8 @@ from utils.route import route
 from utils.network.http import HttpRpcHandler
 from utils.wapper.web import web_adaptor
 from invest_front.logic.web.handler import get_common_dic
-from invest_front.setting import *
+from invest_front.common.about import RECRUIT_LS
+from invest_front.common import *
 
 @route(LOAN_NAV_BAR_DIC[LBL_ABOUT]['url'])  # 关于我们
 class AboutHandle(HttpRpcHandler):
