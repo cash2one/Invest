@@ -31,9 +31,7 @@ class LoginHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def post(self, *args, **kwargs):
         # 默认登陆成功
-        render_dict = {"recruit_ls": RECRUIT_LS}
-        render_dict.update(get_common_dic(self))
-        self.redirect(USER_NAV_BAR_DIC[LBL_U_DATA]['url'], **render_dict)
+        self.redirect(USER_NAV_BAR_DIC[LBL_U_DATA]['url'])
 
 
 @route(USER_NAV_BAR_DIC[LBL_U_BUSIMGR]['url'])  # 用户
