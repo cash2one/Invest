@@ -30,4 +30,16 @@ class LoginHandle(HttpRpcHandler):
 
     @web_adaptor(use_http_render=False)
     def post(self, *args, **kwargs):
-        pass
+        # 默认登陆成功
+        render_dict = {}
+
+        self.redirect('/user')
+
+
+@route(r"/user")  # 用户
+class UserHandle(HttpRpcHandler):
+    @web_adaptor(use_http_render=False)
+    def get(self):
+        # 默认登陆成功
+        render_dict = {}
+        return self.render('user/user.html', **render_dict)
