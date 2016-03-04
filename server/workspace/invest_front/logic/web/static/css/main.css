@@ -50,7 +50,7 @@ h3{FONT-SIZE: 24px}
 .top .inputSub {height:19px;}
 /** 导航 **/
 .nav {
-	background: url(../images/index/nav_li.jpg) repeat-x left top;
+	background: url(/static/img/index/nav_li.jpg) repeat-x left top;
 }
  .nav_global { width:980px;margin:0px auto;
 }
@@ -67,7 +67,7 @@ h3{FONT-SIZE: 24px}
 	font-weight: bold;
 	width:135px;
 	color: #FFF;
-    background: url(../images/index/nav_line.png) no-repeat right top;
+    background: url(/static/img/index/nav_line.png) no-repeat right top;
 	padding-right: 1px;
 	font-family:"微软雅黑"
 }
@@ -80,15 +80,15 @@ h3{FONT-SIZE: 24px}
 .nav_global li a:hover {
 	color: #FFF!important;
 	text-decoration: none;
-	background: url(../images/index/nav_li_hover.jpg) repeat-x center top;
+	background: url(/static/img/index/nav_li_hover.jpg) repeat-x center top;
 }
 .nav_global li.curr a {
 	color: #FFF;
-	background: url(../images/index/nav_li_hover.jpg) repeat-x center top;
+	background: url(/static/img/index/nav_li_hover.jpg) repeat-x center top;
 }
 .nav_global.curr a {
 	color: #FFF;
-	background: url(../images/index/nav_li_hover.jpg) repeat-x center top;
+	background: url(/static/img/index/nav_li_hover.jpg) repeat-x center top;
 }
 .nav_sub {
 	padding: 6px;
@@ -209,7 +209,7 @@ h3{FONT-SIZE: 24px}
 }
 /*贷款业务*/
 #other_div{width:980px;margin:0 auto}
-#other_div .title_other_div{width:950px;height:40px;padding-left:30px; padding-top:10px;font:500 20px/40px 'microsoft yahei';color:#556575;background:url(../images/index/other_title.png) no-repeat 0 17px;}
+#other_div .title_other_div{width:950px;height:40px;padding-left:30px; padding-top:10px;font:500 20px/40px 'microsoft yahei';color:#556575;background:url(/static/img/index/other_title.png) no-repeat 0 17px;}
 #other_div .bor{width:310px;border:1px solid #DEDEDE; background:#F9F9F9; padding-bottom:10px;}
 #other_div .title{ font-size:18px; color:#FF3300; font-weight:bold; line-height:30px;height:40px; font-family:"微软雅黑"}
 #other_div .title a{ font-size:18px; color:#FF3300; font-weight:bold; line-height:30px; padding-left:14px;height:40px; font-family:"微软雅黑"}
@@ -228,15 +228,15 @@ a{cursor:pointer;text-decoration:none}
 #bottom_tem .more{height:40px;padding-left:30px;}
 #bottom_tem .more a{font:400 12px/30px 'microsoft yahei';color:#A5AFB8}
 
-#bottom_tem .title_image_1{background:url(../images/index/bottom_1.png) no-repeat 30px 3px;}
-#bottom_tem .title_image_2{background:url(../images/index/bottom_2.png) no-repeat 30px 3px;}
-#bottom_tem .title_image_3{background:url(../images/index/bottom_3.png) no-repeat 30px 3px;}
+#bottom_tem .title_image_1{background:url(/static/img/index/bottom_1.png) no-repeat 30px 3px;}
+#bottom_tem .title_image_2{background:url(/static/img/index/bottom_2.png) no-repeat 30px 3px;}
+#bottom_tem .title_image_3{background:url(/static/img/index/bottom_3.png) no-repeat 30px 3px;}
 #bottom_tem .right_border{border-right:1px solid #DEDEDE}
 #bottom_tem .none_border{border:none}
 
 /*合作机构*/
 #service_div{width:980px;margin:0 auto}
-#service_div .title_service_div{width:950px;height:40px;padding-left:30px; padding-top:10px;font:500 20px/40px 'microsoft yahei';color:#556575;background:url(../images/index/other_title.png) no-repeat 0 17px;}
+#service_div .title_service_div{width:950px;height:40px;padding-left:30px; padding-top:10px;font:500 20px/40px 'microsoft yahei';color:#556575;background:url(/static/img/index/other_title.png) no-repeat 0 17px;}
 #service_div .bor{border:1px solid #DEDEDE; padding:8px;}
 
 /* 分页样式*/
