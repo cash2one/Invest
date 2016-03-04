@@ -18,11 +18,11 @@
   <tbody><tr>
     <td><div class="nav_global">
         <ul class="nav-site">
-            {% for index_nav_dic in IndexNavBarLs %}
-                {% if CurIndexNavBarUrl == index_nav_dic.url %}
-                    <li class="curr"><a href="{{index_nav_dic.url}}"><span>{{index_nav_dic.des}}</span></a></li>
+            {% for nav_dic in MainNavBarLs %}
+                {% if CurMainNavBarUrl == nav_dic.url %}
+                    <li class="curr"><a href="{{nav_dic.url}}"><span>{{nav_dic.des}}</span></a></li>
                 {% else %}
-                    <li ><a href="{{index_nav_dic.url}}"><span>{{index_nav_dic.des}}</span></a></li>
+                    <li ><a href="{{nav_dic.url}}"><span>{{nav_dic.des}}</span></a></li>
                 {% endif %}
             {% endfor %}
         </ul>

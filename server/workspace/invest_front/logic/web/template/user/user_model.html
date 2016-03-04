@@ -1,0 +1,22 @@
+{% extends 'util/base.html' %}
+{% block head_extend%}
+<title>宏圆投资 - 会员管理中心</title>
+<link href="/static/css/reset.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/member.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/table_form.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="/static/js/member_common.js"></script>
+
+<style>
+body{background:#fff !important;}
+.logo{height:100px !important;background:#fff !important;}
+</style>
+{% endblock %}
+
+{% block header %}
+{% include 'user/user_header.html' %}
+{% endblock %}
+
+{% block end %}
+{% include 'user/user_end.html' %}
+{% endblock %}

@@ -31,15 +31,27 @@ class LoginHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def post(self, *args, **kwargs):
         # 默认登陆成功
-        render_dict = {}
+        render_dict = {"recruit_ls": RECRUIT_LS}
+        render_dict.update(get_common_dic(self))
+        self.redirect(USER_NAV_BAR_DIC[LBL_U_DATA]['url'], **render_dict)
 
-        self.redirect('/user')
 
-
-@route(r"/user")  # 用户
-class UserHandle(HttpRpcHandler):
+@route(USER_NAV_BAR_DIC[LBL_U_BUSIMGR]['url'])  # 用户
+class UserBusimgrHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
         # 默认登陆成功
-        render_dict = {}
-        return self.render('user/user.html', **render_dict)
+        render_dict = {"UserName": "杜若飞"}
+        render_dict.update(get_common_dic(self, USER_NAV_BAR_DIC))
+        return self.render(USER_NAV_BAR_DIC[LBL_U_BUSIMGR]['html'], **render_dict)
+
+
+@route(USER_NAV_BAR_DIC[LBL_U_DATA]['url'])  # 用户
+class UserDataHandle(HttpRpcHandler):
+    @web_adaptor(use_http_render=False)
+    def get(self):
+        # 默认登陆成功
+        render_dict = {"UserName": "杜若飞"}
+        render_dict.update(get_common_dic(self, USER_NAV_BAR_DIC))
+        return self.render(USER_NAV_BAR_DIC[LBL_U_DATA]['html'], **render_dict)
+
