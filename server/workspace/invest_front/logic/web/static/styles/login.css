@@ -1,0 +1,18 @@
+.container{width:980px;margin:50px auto 0; height:455px;}
+.logo{padding:130px 0 0 0;float:left;width:520px;}
+.logo a{margin-left:60px;}
+.line_yf {background: url(/static/images/login/line_yf.jpg) no-repeat;float: left;height: 455px;width: 10px; margin-left:10px;}
+.form{margin-left:20px;width:380px;float:left;margin-top:100px;}
+.title{font-size:16px;font-weight:bold;}
+.tab{margin-left: 35px;margin-top: 10px;width: 380px;}
+.rep1{height:42px;line-height:42px;margin-bottom:20px;position:relative; padding-top:6px;}
+.rep1 span{float:left; height:42px;}
+.loan_text {color: #333; font-size: 14px;line-height: 42px; position:relative; float:left;font-family:"Verdana, Geneva, sans-serif";}
+.login_inc{background: url(/static/images/login/fg.jpg) repeat-x;border: 1px solid #cdcdcd;color: #333;height: 20px;margin-left: 10px;padding: 10px 5px;width: 270px;}
+.present { height:120px; margin-top:10px; border-top:1px solid #e9e9e9;}
+.tijiao { float:right;padding-right:62px; padding-top:30px;}
+.city_anniu {width: 281px;height: 44px;background:#ff6600;line-height: 44px;font-size: 14px;  font-weight: bold; color: #fff;border: none 0;cursor: pointer;display:block;}
+.mt10{clear:both;margin-top:10px;}
+.register{color:#999; text-decoration:none;float:right;padding-right:62px;}
+.tan{background: url(/static/images/login/notice.gif) no-repeat;color: #e36c09;padding-left: 14px;position: absolute; }
+.tanwz4{background-position: 0 16px;bottom: 33px;right: 39px;font-size:12px;}

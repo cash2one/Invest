@@ -1,0 +1,42 @@
+{% extends 'util/base.html' %}
+
+{% block head_extend %}
+        <script type="text/javascript" src="/static/scripts/cookie.js"></script>
+        <script type="text/javascript" src="/static/scripts/jquery.validate.js"></script>
+        <script type="text/javascript" src="/static/scripts/validate.extend.js"></script>
+        <script type="text/javascript" src="/static/scripts/login.js"></script>
+        <link href="/static/styles/login.css" rel="stylesheet" type="text/css" />
+{% endblock %}
+
+
+{% block body %}
+<div class="container">
+    <div class="logo"><a href="/"><img src="/static/images/util/logo1.jpg" /></a></div>
+    <div class="line_yf"></div>
+    <div class="form">
+        <form action="/login" id="myform" method="post">
+            <div class="title">业务经理管理平台 - 登陆</div>
+            <div class="tab">
+            	<div class="rep1 mt36"> 
+                	<span class="loan_text">帐号:</span>
+                    <span class="wbk"><input type="text" value="" name="username" id="username" class="login_inc" placeholder="请输入您的帐号"></span>
+                </div>
+                <div class="rep1 mt36"> 
+                	<span class="loan_text">密码:</span>
+                    <span class="wbk"><input type="password" value="" name="password" id="password" class="login_inc" placeholder="请输入您的密码"></span>
+                </div>
+            </div>
+            <div class="present">
+            	<div class="tijiao">
+                	<input type="submit" class="city_anniu" value="登  陆">
+                </div>
+                <div class="rep1 mt10">
+                	<a href="/findpassword" class="register">找回密码</a>
+                    <a href="/register" class="register">业务经理注册</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

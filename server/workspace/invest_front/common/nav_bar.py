@@ -30,7 +30,7 @@ INDEX_NAV_BAR_DIC = {
     LBL_CASE:       {"idx": 2, "des": "贷款案例", "url": "/case",             "html": "/util/list.html"},
     LBL_PROBLEM:    {"idx": 3, "des": "常见问题", "url": "/problem",          "html": "/util/list.html"},
     LBL_ABOUT:      {"idx": 4, "des": "关于宏圆", "url": "/about",            "html": "/about/about.html"},
-    LBL_LOGIN:      {"idx": 5, "des": "经理登录", "url": "/login",            "html": "/login/login.html"},
+    LBL_LOGIN:      {"idx": 5, "des": "经理登录", "url": "/login",            "html": "/user/login.html"},
 }
 
 # ABOUT导航栏详细信息列表
