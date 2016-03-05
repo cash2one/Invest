@@ -1,0 +1,67 @@
+{% extends 'user/user_model.html' %}
+
+{% block context %}
+<script language="javascript" type="text/javascript" src="http://www.hytz.com/statics/js/dialog.js"></script>
+<div id="memberArea">
+<div class="col-left col-1 left-memu">
+    <h5 class="title"><img src="http://www.hytz.com/statics/images/icon/m_1.png" width="15" height="15" /> 管理中心</h5>
+    <ul>
+        <li  class="on"><a href="index.php?m=manager&c=index&a=init"><img src="http://www.hytz.com/statics/images/icon/m_3.png" width="14" height="15" />业务列表</a></li>
+        <li ><a href="index.php?m=manager&c=index&a=apply"><img src="http://www.hytz.com/statics/images/icon/m_3.png" width="14" height="15" />提交贷款</a></li>
+    </ul>
+    <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+</div>    <div class="col-auto">
+					    	<div class="point" id='announcement' style="display:none">
+        	<a href="javascript:hide_element('announcement');setcookie('announcement__2', 1);" hidefocus="true" class="close"><span>关闭</span></a>
+            <div class="content">
+					<span class="title">最新通知</span>
+					<span>请业务经理及时完善个人资料</span>
+            </div>
+            <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+        </div>
+			    	<div class="col-auto">
+            <div class="col-1 ">
+            	<h5 class="title">我的业务列表</h5>
+            	<div class="table-list">
+                    <table width="100%" cellspacing="0">
+                        <thead>
+                            <tr>
+                                <th width="8%" align="center"><input type="checkbox" value="" id="check_box" onclick="selectall('applyid[]');"></th>
+                                <th width="7%" align="center">申请人</th>
+                                <th width="7%" align="center">联系方式</th>
+                                <th width="7%" align="center">用途</th>
+                                <th width="7%" align="center">贷款金额</th>
+                                <th width="7%" align="center">贷款期限</th>
+                                <th width="7%" align="center">申请时间</th>
+                                <th width="7%" align="center">处理时间</th>
+                                <th width="7%" align="center">状态</th>
+                                <th width="10%" align="center">管理操作</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+					                    </tbody>
+					                    </table>
+            	</div>
+            	<span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+<script type="text/javascript" src="http://www.hytz.com/statics/js/cookie.js"></script>
+<script language="JavaScript">
+<!--
+$(document).ready(function() {
+	var announcement = getcookie('announcement__2');
+	if(announcement==null || announcement=='') {
+		$("#announcement").fadeIn("slow");
+	}
+});
+//-->
+function applyinfo(id, name) {
+	window.top.art.dialog({id:'info'}).close();
+	window.top.art.dialog({title:'贷款申请 《'+name+'》',id:'info',iframe:'?m=loan&c=index&a=applyinfo&id='+id,width:'700',height:'460'}, function(){var d = window.top.art.dialog({id:'info'}).data.iframe;d.document.getElementById('dosubmit').click();return false;}, function(){window.top.art.dialog({id:'info'}).close()});
+}
+</script>
+
+{% endblock %}
