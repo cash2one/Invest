@@ -2,7 +2,7 @@
 	<div class="logo"><a href="/"><img border="0" src="/static/img/util/logo1.jpg"></a><h3>会员中心</h3></div>
     <div class="link">您好，{{UserName}}<span> | </span>
 	<a href="/logout">退出</a>
-	<span> | </span><a href="http://www.hytz.com/">首页</a>
+	<span> | </span><a href="/">首页</a>
     </div>
 	<div class="nav-bar">
     	<map>
@@ -13,6 +13,7 @@
                 {% else %}
                     <li ><a href="{{nav_dic.url}}"><span>{{nav_dic.des}}</span></a></li>
                 {% endif %}
+                <li class="line">|</li>
             {% endfor %}
             </ul>
         </map>

@@ -31,25 +31,52 @@ class LoginHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def post(self, *args, **kwargs):
         # 默认登陆成功
-        self.redirect(USER_NAV_BAR_DIC[LBL_U_DATA]['url'])
+        self.redirect(USER_NAV_BAR_DIC[LBL_U_BUSIMGR]['url'])
 
 
-@route(USER_NAV_BAR_DIC[LBL_U_BUSIMGR]['url'])  # 用户
+@route(USER_NAV_BAR_DIC[LBL_U_BUSIMGR]['url'])  # 业务管理
 class UserBusimgrHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
-        # 默认登陆成功
-        render_dict = {"UserName": "杜若飞"}
-        render_dict.update(get_common_dic(self, USER_NAV_BAR_DIC))
-        return self.render(USER_NAV_BAR_DIC[LBL_U_BUSIMGR]['html'], **render_dict)
+        # 默认跳转到业务列表
+        return self.redirect(USER_BUSIMGR_BAR_DIC[LBL_UB_LIST]['url'])
 
 
-@route(USER_NAV_BAR_DIC[LBL_U_DATA]['url'])  # 用户
+@route(USER_NAV_BAR_DIC[LBL_U_DATA]['url'])  # 个人资料
 class UserDataHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
-        # 默认登陆成功
         render_dict = {"UserName": "杜若飞"}
         render_dict.update(get_common_dic(self, USER_NAV_BAR_DIC))
         return self.render(USER_NAV_BAR_DIC[LBL_U_DATA]['html'], **render_dict)
+
+
+@route(USER_BUSIMGR_BAR_DIC[LBL_UB_LIST]['url'])  # 业务列表
+class UserBusimgrListHandle(HttpRpcHandler):
+    @web_adaptor(use_http_render=False)
+    def get(self):
+        UBNavBarLs = USER_BUSIMGR_BAR_DIC.values()
+        UBNavBarLs.sort(key=lambda dic: dic['idx'])
+
+        render_dict = {"UserName": "杜若飞",
+                       'UBNavBarLs': UBNavBarLs}
+        render_dict.update(get_common_dic(self, USER_NAV_BAR_DIC))
+        return self.render(USER_BUSIMGR_BAR_DIC[LBL_UB_LIST]['html'], **render_dict)
+
+
+@route(USER_BUSIMGR_BAR_DIC[LBL_UB_APPLY]['url'])  # 提交贷款
+class UserBusimgrApplyHandle(HttpRpcHandler):
+    @web_adaptor(use_http_render=False)
+    def get(self):
+        UBNavBarLs = USER_BUSIMGR_BAR_DIC.values()
+        UBNavBarLs.sort(key=lambda dic: dic['idx'])
+        LoanProductLs = LOAN_PRODUCT_DIC.values()
+        LoanProductLs.sort(key=lambda dic: dic['idx'])
+
+        render_dict = {"UserName": "杜若飞",
+                       'UBNavBarLs': UBNavBarLs,
+                       'LoanProductLs':LoanProductLs}
+        render_dict.update(get_common_dic(self, USER_NAV_BAR_DIC))
+        return self.render(USER_BUSIMGR_BAR_DIC[LBL_UB_APPLY]['html'], **render_dict)
+
 

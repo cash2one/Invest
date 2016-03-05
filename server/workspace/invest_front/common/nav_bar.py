@@ -26,7 +26,11 @@ LOAN_NAV_BAR_ID_LS = [
     LBL_U_DATA,             # 个人资料
     LBL_U_CO_EMAIL,         # 公司邮箱
     LBL_U_NOTICE,           # 网站公告
-] = xrange(0, 13)
+
+    # user - 业务员管理
+    LBL_UB_LIST,            # 业务列表
+    LBL_UB_APPLY,           # 提交贷款
+] = xrange(0, 15)
 
 # INDEX导航栏详细信息列表
 INDEX_NAV_BAR_DIC = {
@@ -49,13 +53,20 @@ ABOUT_NAV_BAR_DIC = {
 
 # 用户管理信息列表
 USER_NAV_BAR_DIC = {
-    LBL_U_BUSIMGR:  {"idx": 0, "des": "业务管理", "url": "/u_busimgr",       "html": "/user/u_busimgr.html"},
+    LBL_U_BUSIMGR:  {"idx": 0, "des": "业务管理", "url": "/u_busimgr"},
     LBL_U_DATA:     {"idx": 1, "des": "个人资料", "url": "/u_data",          "html": "/user/u_data.html"},
     LBL_U_CO_EMAIL: {"idx": 2, "des": "公司邮箱", "url": "/u_co_email",      "html": "/user/u_co_mail.html"},
     LBL_U_NOTICE:   {"idx": 3, "des": "网站公告", "url": "/u_notice",        "html": "/user/u_notice.html"},
+}
+
+# 用户管理-业务管理信息列表
+USER_BUSIMGR_BAR_DIC = {
+    LBL_UB_LIST:   {"idx": 0, "des": "业务列表", "url": "/u_busimgr/list",    "html": "/user/u_busimgr_list.html"},
+    LBL_UB_APPLY:  {"idx": 1, "des": "提交贷款", "url": "/u_busimgr/apply",   "html": "/user/u_busimgr_apply.html"},
 }
 
 LOAN_NAV_BAR_DIC = {}
 LOAN_NAV_BAR_DIC.update(INDEX_NAV_BAR_DIC)
 LOAN_NAV_BAR_DIC.update(ABOUT_NAV_BAR_DIC)
 LOAN_NAV_BAR_DIC.update(USER_NAV_BAR_DIC)
+LOAN_NAV_BAR_DIC.update(USER_BUSIMGR_BAR_DIC)

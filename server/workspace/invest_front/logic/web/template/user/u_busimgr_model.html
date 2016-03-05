@@ -1,0 +1,29 @@
+{% extends 'user/user_model.html' %}
+
+{% block context %}
+<script language="javascript" type="text/javascript" src="/static/user/dialog.js"></script>
+<script language="javascript" type="text/javascript" src="/static/user/busimgr.js"></script>
+<script language="javascript" type="text/javascript" src="/static/js/util/cookie.js"></script>
+
+<div id="memberArea">
+    <div class="col-left col-1 left-memu">
+        <h5 class="title"><img src="/static/img/user/m_1.png" width="15" height="15" /> 管理中心</h5>
+        <ul>
+            {% for nav_dic in UBNavBarLs %}
+                {% if CurNavBarUrl == nav_dic.url %}
+                    <li class="on"><a href="{{nav_dic.url}}"><img src="/static/img/user/m_3.png" width="14" height="15" />{{nav_dic.des}}</a></li>
+                {% else %}
+                    <li><a href="{{nav_dic.url}}"><img src="/static/img/user/m_3.png" width="14" height="15" />{{nav_dic.des}}</a></li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+        <span class="o1"></span><span class="o2"></span><span class="o3"></span><span class="o4"></span>
+    </div>
+
+    {% block busimgr %}
+    {% endblock %}
+
+    <div class="clear"></div>
+</div>
+
+{% endblock %}

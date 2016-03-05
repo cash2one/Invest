@@ -1,0 +1,31 @@
+{% extends 'user/u_busimgr_model.html' %}
+
+{% block busimgr %}
+
+<div class="col-auto">
+	<script type="text/javascript" src="/static/js/util/jquery.autoComplete-1.5.2.js"></script>
+    <link href="/static/css/util/autocomplete.css" />
+    <div class="pad-lr-10 table-list common-form">
+        <form name="myform" id="myform" action="/loan_product_apply" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>贷款提交：第一步</legend>
+                <table width="100%" class="table_form">
+                    <tr>
+                        <td width="120">贷款产品</td>
+                        <td>
+                            <select name="productid">
+                                {% for loan_product_dic in LoanProductLs %}
+                                    <option value="{{loan_product_dic.idx}}">{{loan_product_dic.title}}</option>
+                                {% endfor %}
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div class="bk15"></div>
+            <input name="dosubmit" type="submit" id="dosubmit" value="提交" style="width: 281px;height: 44px;background:#5790cc;line-height: 44px;font-size: 14px;  font-weight: bold; color: #fff; border:none;cursor: pointer;display:block;margin:0 auto;">
+        </form>
+    </div>
+</div>
+
+{% endblock %}
