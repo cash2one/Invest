@@ -39,7 +39,7 @@ class UserBusimgrHandle(HttpRpcHandler):
     @web_adaptor(use_http_render=False)
     def get(self):
         # 默认跳转到业务列表
-        return self.redirect(USER_BUSIMGR_BAR_DIC[LBL_UB_LIST]['url'])
+        self.redirect(USER_BUSIMGR_BAR_DIC[LBL_UB_LIST]['url'])
 
 
 @route(USER_NAV_BAR_DIC[LBL_U_DATA]['url'])  # 个人资料
